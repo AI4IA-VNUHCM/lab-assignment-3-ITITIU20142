@@ -13,7 +13,17 @@ ______________________________________
 
 void Ex5(int arr[], int n){
 	//Your codes here
-	
+	int j=0, array[n];
+	for (int i=0; i < n;i++){
+		if (arr[i] > 0) 
+			printf("%d ", arr[i]);
+		else {
+			array[j]=arr[i];
+			j++;
+		}
+	}
+	for (int i = 0; i<j; i++) 
+		printf("%d ", array[i]);
 }
 
 int main(int argc, char *argv[]) {
